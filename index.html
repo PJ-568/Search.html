@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <![endif]-->
-    <meta name="viewport" content="width=455, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="viewport" content="width=455, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjAiIGZpbGw9ImdyZWVuIi8+PC9zdmc+"
+    />
     <title>搜索</title>
     <style>
-        body {
-            margin: 0;
-            background: #888;
-        }
+      html,
+      :root,
+      body {
+        margin: 0;
+        background: #f4f4f4;
+      }
 
-        h1 {
-            box-sizing: border-box;
-            width: 100%;
-            background: #ccc;
-            margin: 0;
-            padding: 30px;
-        }
+      .container {
+        text-align: center;
+        margin: 33vh auto 0 auto;
+      }
 
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
+      .search-input {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 300px;
+      }
 
-        .search-input {
-            box-sizing: border-box;
-            display: inline-block;
-            padding: 10px;
-            border: 1px solid #ccc;
-            width: 300px;
-        }
-
-        .search-button {
-            display: inline-block;
-            padding: 10px 20px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
+      .search-button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        background-color: #4caf50;
+        border: 1px solid #4caf50;
+        color: white;
+        cursor: pointer;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>搜索</h1>
+  <body>
     <div class="container">
-        <form action="https://cn.bing.com/search" method="get">
-            <input type="text" name="q" class="search-input" placeholder="搜索……"><button type="submit"
-                class="search-button">搜索</button>
-        </form>
+      <h1>搜索</h1>
+      <form action="https://cn.bing.com/search" method="get">
+        <input
+          type="text"
+          name="q"
+          class="search-input"
+          placeholder="请输入关键词……"
+          required
+        /><button type="submit" class="search-button">搜索</button>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
