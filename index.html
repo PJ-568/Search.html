@@ -18,6 +18,7 @@
       body {
         margin: 0;
         background: #f4f4f4;
+        color: #333;
       }
 
       .container {
@@ -41,6 +42,26 @@
         border: 1px solid #4caf50;
         color: white;
         cursor: pointer;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        :root,
+        body {
+          background: #1a1a1a;
+          color: #e0e0e0;
+        }
+
+        .search-input {
+          background: #2d2d2d;
+          border-color: #555;
+          color: #e0e0e0;
+        }
+
+        .search-button {
+          background-color: #388e3c;
+          border-color: #388e3c;
+        }
       }
     </style>
   </head>
